@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>More Than Beautiful</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="More Than Beautiful">
+        <meta name="keywords" content="More Than Beautiful, 海外ファッション, 日本初上陸, アパレル, オープニングセール, 代官山店グランドオープン">
+        <link rel="stylesheet" href="../css/slick.css">
+        <link rel="stylesheet" href="../css/slick-theme.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="apple-touch-icon" href="../apple-touch-icon-180x180png">
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="../js/slick/slick.min.js"></script>
+        <script src="../js/script.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="header_ad">
+                <p>SHOP, LINK, EARN! MORE THAN BEAUTIFULのアンバサダーになろう!</p>
+            </div>
+            <div>
+                <h1>
+                    <a href="../index.html"><img src="../images/logo.svg" width ="400" height="37" alt="ファッションサイト More Than Beautiful"></a>
+                </h1>
+                
+                <!-- ↓ここにハンバーガーボタンを設置 -->
+                <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+                <label for="navToggle" class="btn-burger"></label>
+                <nav class="menu-content inner">
+                    <ul class="flex">
+                        <li><a href="../index.html"><div class="nav_text">TOP</div></a></li>
+                        <li><a href="../products/index.html"><div class="nav_text">PRODUCTS</div></a></li>
+                        <li><a href="../about/index.html"><div class="nav_text">AMBASSADORS</div></a></li>
+                        <li><a href="../shop/index.html"><div class="nav_text">SHOP LISTS</div></a></li>
+                        <li><a href="../about/index.html"><div class="nav_text">ABOUT US</div></a></li>
+                        <li class="current"><div class="nav_text">CONTACT US</div></li>
+                    </ul>
+                </nav> 
+            </div> 
+        </header>
+
+        <main class="inner">
+            <figure class="mv">
+                <img src="../images/contact_top.jpg" width="980" height="55" alt="More Than Beautiful お問合せ">
+            </figure>
+            <div class="inner2">
+                <section class="faq">
+                    <div class="title">
+                        <h2>FAQ</h2>
+                        <p>よくあるご質問</p>
+                    </div>
+                    <ul id="drop" class="faq_drop">
+                        <li class="drop_down">商品の返品・交換について
+                          <ul>
+                            <li>ご購入日より30日以内にタグが付いたままの商品と紙のレシートをお持ちいただけますとご返金を承ります。
+                                
+                                郵送でのご返品は受付致しかねますのでご了承くださいませ。
+                                
+                                損傷、汚れがなく、洗濯、変造されておらず、未着用で、かつすべてのラベルやタグが付いた状態の商品返品に限り返金に応じます。</li>
+                          </ul>
+                        </li>
+                        <li class="drop_down">支払方法は何がありますか？
+                          <ul>
+                            <li>クレジットカード、Amazonペイ、paypay、ペイディ、楽天ペイ、代金引換、銀行振込、コンビニ先払い、キャリア決済がご利用いただけます。</li>
+                          </ul>
+                        </li>
+                        <li class="drop_down">店舗での取り置きや他店からの取り寄せはできますか？
+                          <ul>
+                            <li>申し訳ございませんが、お取り置きや他店からのお取り寄せは承っておりません。</li>
+                        </ul>
+                        </li>
+                        <li class="drop_down">在庫があるか確認できますか？
+                          <ul>
+                            <li>お答えは可能です。しかし在庫は流動的ですので直接店舗にご来店いたいた際の数が異なる可能性があることをご了承くださいませ。</li>
+                          </ul>
+                        </li>
+                      </ul>
+                </section>
+                <section class="section">
+                    <div class="title">
+                        <h2>INQUIRY</h2>
+                        <p>お問合せ</p>
+                    </div>
+
+                    <form action="form.php" method="post">
+                        <div id="nameSection">
+                          <p><label for="name">お名前</label></p>
+                          <p class="alert">Alert : お名前を入力してください。</p>
+                          <input type="name" id="name" name="name" value="">
+                        </div>
+
+                        <div id="phoneSection">
+                            <p><label for="phone">お電話番号</label></p>
+                            <p class="alert">Alert :お電話番号を入力してください。</p>
+                            <input type="phone" id="phone" name="phone" value="">
+                          </div>
+                        
+                        <div id="emailSection">
+                            <p><label for="email">EMAILアドレス</label></p>
+                            <p class="alert">Alert :EMAILアドレスを入力してください。</p>
+                            <input type="email" id="email" name="email" value="">
+                        </div>
+
+                        <div id="textareaSection">
+                            <p><label for="textarea">お問い合わせ内容</label> </p>
+                            <p class="alert">Alert :お問い合わせ内容を入力してください。</p>
+                            <textarea id="textarea" name="textarea"></textarea>
+                        </div>
+                          <input type="submit" value="Submit" id="submitBtn">
+                    </form>
+                </section>
+            </div>
+        </main>
+            <!-- トップに戻るボタン -->
+            <div class="to-top">
+                <img src="../images/top.png"  width="50" height="50" alt="ページのトップに戻る">
+            </div>
+        <footer>
+            <div class="flex">
+                <div class="footer_logo">
+                    <a><img src="../images/logo.svg" width="200" height="19" alt="More Than Beautiful"></a>
+                </div>
+                <p class="insta">
+                    <a href="#"><img src="../images/insta.png"  width="29" height="29" alt="インスタグラムのアイコン"></a>
+                </p>
+            </div>
+            <div class="text">
+                <p>〒123-4567</p>
+                <p>東京都渋谷区代官山町 3-19</p>
+                <p class="copyright"><small>&copy;More Than Beautiful 2023</small></p>
+            </div>
+        </footer>
+    </body> 
+</html>
