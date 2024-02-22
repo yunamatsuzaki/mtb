@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+
+/* ▼ お問い合わせ(contact)ページに対する固有の指定 -------*/
+body main .title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FAQ */
+body main .faq .faq_drop .drop_down{
+    border-bottom:1px solid black;
+}
+
+body main .faq .faq_drop li{
+	float:left;
+	width:720px;
+	text-align:left;
+	list-style-type:none;
+	font-weight:bold;
+    margin-bottom: 88px;
+}
+
+body main .faq .faq_drop ul{
+	display:none;
+	position:absolute;
+	width:720px;
+}
+
+body main .faq .faq_drop li li{
+	float:none;
+    line-height: 1.2;
+    padding-top: 5px;
+}
+
+
+main .section{
+	clear:both;
+}
+
+
+
+
+
+/* CONTACT FORM */
+p.alert{
+	font-size:1em;
+	font-weight:normal;
+	margin:10px 0;
+	color:#DC2900;
+}
+
+
+input[type="name"],name{
+	padding:5px;
+	color:#333;
+	border:1px solid #CCC;
+	background:#EFEFEF;
+	width: 720px;
+	height:23px;
+}
+
+
+input[type="phone"],phone{
+	padding:5px;
+	color:#333;
+	border:1px solid #CCC;
+	background:#EFEFEF;
+	width: 720px;
+	height:23px;
+}
+
+input[type="email"],email{
+	padding:5px;
+	color:#333;
+	border:1px solid #CCC;
+	background:#EFEFEF;
+	width: 720px;
+	height:23px;
+}
+
+
+
+input[type="text"], textarea{
+	padding:5px;
+	color:#333;
+	border:1px solid #CCC;
+	background:#EFEFEF;
+}
+
+input[type="text"]{
+	width: 720px;
+}
+
+textarea{
+	width:720px;
+	height:300px;
+}
+
+#submitBtn{
+	color:#fff;
+	background:#333;
+	border:0;
+	display:block;
+	margin:0 auto;
+    margin-top: 10px;
+	padding:10px 25px;
+    font-family: 'Cinzel', serif;
+}
+
+#submitBtn:focus{
+	outline:none;
+}
+
+form div{
+    margin-top: 10px;
+}
+
+/* レスポンシブに向けた記述 */
+main .mv img{
+    width: 100%;
+    height: auto;
+}
+
+.inner {
+    width: auto;
+    max-width: 960px;
+}
+
+.inner2{
+    width: auto;
+    max-width: 720px;
+}
+
+
+/* 画面幅が768px以下に向けた記述 */
+@media screen and (max-width:768px){
+	.inner2{
+		max-width: 90%;
+	}
+
+	body main .faq_drop{
+		text-align: center;
+	}
+
+
+	body main .faq .faq_drop li{
+		width:95%;
+		margin-bottom: 150px;
+		margin-right: 10px;
+
+	}
+	
+	body main .faq .faq_drop ul{
+		width: 95%;
+	}
+	
+
+	main {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+
+
+	input[type="name"]{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	input[type="phone"]{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	input[type="email"]{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	input[type="text"]{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	
+	textarea{
+		width: 100%;
+		height: 200px;
+		margin-bottom: 10px;
+	}
+
+}

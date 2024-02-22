@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+
+    body .amb_register{
+        border-bottom: 1px solid #333;
+        border-top: 1px solid #333;
+        margin-bottom: 20px;
+    }
+
+
+    body .steps {
+        padding: 10px;
+    }
+
+    body .steps p{
+        line-height: 2;
+    }
+
+    body .amb_register .btn{
+        width:180px;
+        line-height: 40px;
+        background: black;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    .amb_register p{
+        text-align: center;
+    }
+
+    .btn a{
+        margin-top: 20px;
+        display: block;
+        transition: all .2s;
+        color: #fff;
+    }
+
+    .btn a:hover{
+        text-shadow: 0 0 3px #fff;
+    }
+
+    .sale {
+        margin-bottom: 20px;
+    }
+
+/* レスポンシブに向けて */
+
+    .inner {
+        width: auto;
+        max-width: 960px;
+    }
+
+    main .mv img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    main figure img{
+        max-width: 100%;
+        height: auto;
+    }
+/* 画面幅が768px以下に向けた記述 */
+@media screen and (max-width:768px){
+    main .mv{
+        padding-top: 20px;
+    }
+
+    body main .inner .flex{
+        flex-direction: column;
+    }
+
+    body main .steps p{
+        text-align: justify;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    body .amb_register h2{
+        font-size: 20px;
+        font-weight:bold;
+    }
+
+    .amb_register p{
+        font-size: 16px;
+    }
+
+    body .amb_register .btn{
+        max-width: 120px;
+    }
+
+    body .amb_register .btn a{
+        font-size: 16px;
+    }
+
+
+    }

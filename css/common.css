@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* リセットの記述 -------------------------------------*/
+body,h1,h2,h3,p,ul,dl,dd,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+a{
+    text-decoration: none;
+}
+
+address{
+    font-style: normal;
+}
+
+
+
+/* 使いまわしが効くクラス名での指定 ----------------------------------*/
+.inner{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.inner2{
+    width: 720px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 全体に対する基本指定 ------------------------------------*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'Cinzel', serif;
+    color: black;
+    font-weight: lighter;
+    background-color: transparent;
+}
+body h2{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+body h1{
+    text-align: center;
+}
+
+
+main{
+    margin-top: 20px;
+}
+
+/* トップに戻るボタン -------------------------------------------*/
+
+.to-top{
+    position: fixed;
+    right:30px;
+    bottom:20px;
+}
+
+
+.to-top img:hover {
+    cursor: pointer;
+}
+
+
+/* ヘッダー --------------------------------------------------------*/
+header{
+    padding-bottom: 10px;
+    /* margin-bottom: 20px; */
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+
+header a{
+    color: black;
+    transition: all 0.2s;
+}
+
+
+/* ヘッダーのAd */
+header .header_ad{
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    height: 20px;
+    background-color: black;
+    margin-bottom: 10px;
+    overflow : hidden;
+}
+
+header .header_ad p{
+    margin:0;
+    display : inline-block;
+    padding-left: 100%;
+    white-space : nowrap;
+    line-height : 1em;
+    animation : scrollheader_ad 15s linear infinite;
+    }
+    @keyframes scrollheader_ad{
+    0% { transform: translateX(0)}
+    100% { transform: translateX(-100%)}
+    }
+
+
+    
+/* グローバルナビゲーション */
+body header .menu-content{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+nav ul li{
+    width: 188px;
+    text-align: center;
+    border-left: 1px solid #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 18px;
+}
+
+nav ul li .nav_text{
+    padding-top: 8px;
+}
+
+nav ul li:last-child{
+    border-right: 1px solid #333;
+}
+
+nav ul li a{
+    display: block;
+    font-size: 16px;
+}
+
+nav ul li span{
+    display: block;
+    line-height: 1;
+}
+
+nav ul li:hover{
+    background-color: rgba(104, 99, 99, 0.192);
+}
+
+
+nav ul .current{
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/* アンバサダーAD 画像埋め込み*/
+
+body main .amb_ad{
+    margin: 20px 0 20px 0;
+}
+
+/* アンバサダーAD */
+body main .amb_img{
+        float: left;
+        
+    }
+body main .amb_box{
+    background-color: black;
+    width: 100%;
+    height: 504px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+} 
+body main .amb_txt{
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
+
+    padding: 20px;
+}
+
+body main .amb_txt dt{
+    font-size: 50px;
+}
+
+body main .amb_txt dd{
+    font-size: 30px;
+}
+
+
+
+/* フッター ---------------------------------------------------*/
+
+footer{
+    background-color: #E6E6E6;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    color: black;
+    margin-top: 20px;
+}
+
+footer .footer_logo{
+    line-height: normal;
+}
+
+footer .flex{
+    justify-content: center;
+}
+
+footer .text{
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 2;
+}
+
+.insta{
+    display: block;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+
+/* フェードイン */
+
+.fadein {
+    opacity: 0;
+    transform: translate(0,0);
+    transition: all 1.5s;
+  &.fadein-left{
+      transform: translate(-30px,0);
+  }
+  &.fadein-right{
+      transform: translate(30px,0);
+  }
+  &.fadein-up{
+      transform: translate(0,-30px);
+  }
+  &.fadein-bottom{
+      transform: translate(0,30px);
+  }
+  &.scrollin{
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
+}

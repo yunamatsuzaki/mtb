@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+/* アイテムセクション */
+
+body main .items{
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+body main .items .container{
+    position: relative;
+    text-align: center;
+}
+
+body main .items .container h2{
+        position: absolute;
+        font-size:large;
+        font-weight: bold;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding:0;
+        margin:0px;
+        color: black;
+}
+
+body main .items .container .items_btn{
+    position: absolute;
+    font-size:16px;
+    top:60%;
+    left:50%;
+    transform: translate(-60%,-50%);
+    padding:0;
+    margin:0;
+    width:120px;
+    line-height: 25px;
+    background: black;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.items_btn a{
+    display: block;
+    transition: all .2s;
+    color: white;
+}
+
+.items_btn a:hover{
+    text-shadow: 0 0 3px #fff;
+}
+
+
+/* SEENITONINSTA？ */
+body main .insta_sec h2::after{
+    content:"";
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background-image: url(../images/insta.png);
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
+body main .insta_sec .top_insta{
+    text-align: center;
+}
+
+
+.sec_1{
+    padding-left:13px;
+    text-align: center;
+}
+
+
+.sec_2{
+    margin-right:13px;
+    text-align: center;
+}
+
+/* アンバサダー */
+
+body .amb_ad img{
+    z-index: 2;
+}
+
+body .amb_ad{
+    position: relative;
+}
+
+/* アンバサダーボタン */
+body .amb_ad .btn{
+    width:180px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 2px 11px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    position: absolute;
+    float:right;
+    top: 80%;
+    right: 18%;
+}
+
+.btn a{
+    display: block;
+    transition: all .2s;
+    color: black;
+}
+
+.btn a:hover{
+    text-shadow: 0 0 3px #333;
+}
+
+/* top_new */
+body main .top_new{
+    position: relative;
+}
+
+body main .top_new h2{
+    line-height: 40px;
+    font-size: 55px;
+    margin: 0 auto;
+    position: absolute;
+    float:right;
+    top: 50%;
+    right: 15%;
+    z-index: 2;
+}
+
+/* top_new ボタン */
+body main .top_new .btn_new{
+    width:180px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 2px 11px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+
+    position: absolute;
+    float:right;
+    top: 70%;
+    right: 20%;
+    z-index: 2;
+}
+
+.btn_new a{
+    display: block;
+    transition: all .2s;
+    color: black;
+}
+
+.btn_new a:hover{
+    text-shadow: 0 0 3px #333;
+}
+
+
+
+/* レスポンシブに向けて */
+
+
+.inner {
+    width: auto;
+    max-width: 960px;
+}
+
+.mv img {
+    max-width: 100%;
+    height: auto;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+main .top_insta img {
+    max-width: 80%;
+    height: auto;
+}
+
+.container img{
+    max-width: 90%;
+    justify-content: space-around;
+}
+
+
+
+/* 画面幅が768px以下に向けた記述 */
+@media screen and (max-width:768px){
+
+    /* NEWセクション */
+    body main .top_new h2{
+        line-height: 20px;
+        font-size: 30px;
+        top: 50%;
+        right: 15%;
+        position: absolute; 
+    }
+
+    /* top_new ボタン */
+    body main .top_new .btn_new{
+        width:120px;
+        line-height: 30px;
+        position: absolute;
+        top: 70%;
+        right: 20%;
+    }
+
+
+    /* アイテムセクション */
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body main .container{
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    body main .items{
+       flex-direction: column;
+       padding-left: 30px;
+    }
+
+
+
+    body main .items .container h2{
+        position: absolute;
+        font-size:25px;  
+        top:25%;
+        left:75%;
+
+}
+    body main .items .container .items_btn{
+        position: absolute;
+        font-size:16px;
+        top:60%;
+        left:78%;
+        text-decoration: none;
+        width:150px;
+        line-height: 40px;
+        font-size: 20px;
+    
+    }
+    /* インスタセクション */
+    .sec_1, .sec_2{
+        justify-content: space-between;
+        
+    }
+    
+    .sec_1 img, .sec_2 img{
+        width: 90%;
+        text-align: center;
+    }
+
+    /* アンバサダーボタン */
+    body .amb_ad .btn{
+        width: 100px;
+        height: 40px;
+        top: 70%;
+        right: 20%;
+    }
+    
+
+}
